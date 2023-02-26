@@ -1,1 +1,1 @@
-На проект ушло 36 часов
+Adaptive layout for mobile, tablet and desktop
