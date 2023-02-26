@@ -1,0 +1,131 @@
+.product-card {
+  .list-style;
+  background-color: @base-white;
+  padding: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 30px;
+  }
+}
+
+.product-card__link {
+  display: block;
+  margin-bottom: 24px;
+  margin-top: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 20px;
+    margin-bottom: 31px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 21px;
+  }
+}
+
+.product-card__link:hover {
+  opacity: 0.8;
+}
+
+.product-card__link:focus {
+  opacity: 0.8;
+}
+
+.product-card__link:active {
+  opacity: 0.5;
+}
+
+.product-card__image {
+  display: block;
+  .centering;
+}
+
+.product-card__title {
+  .font-features-title;
+  margin-top: 0;
+  margin-bottom: 4px;
+  .link-style;
+  color: @base-black;
+
+  @media (min-width: @tablet-width) {
+    .font-subtitles;
+    margin-bottom: 9px;
+    width: fit-content;
+  }
+}
+
+.product-card__title:hover {
+  opacity: 0.8;
+}
+
+.product-card__title:focus {
+  opacity: 0.8;
+}
+
+.product-card__title:active {
+  opacity: 0.6;
+}
+
+.product-card__description {
+  .font-promo-text;
+  margin-top: 0;
+  margin-bottom: 15px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 19px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.product-card__price-wrapper {
+  display: grid;
+  grid-template-columns: auto 141px;
+  gap: 49px;
+}
+
+.product-card__price {
+  .font-promo-price;
+  box-sizing: border-box;
+  padding-top: 3px;
+
+  @media (min-width: @tablet-width) {
+    .font-product-price-tablet;
+  }
+}
+
+.product-card__button {
+  .link-style;
+  display: block;
+  color: @base-white;
+  .font-promo-text;
+  background-color: @base-primary;
+  border-radius: 4px;
+  padding: 9px 20px 8px 46px;
+  position: relative;
+}
+
+.product-card__button-icon {
+  position: absolute;
+  left: 18px;
+  top: 10px;
+}
+
+.product-card__button:hover {
+  background-color: @primary-lighter;
+}
+
+.product-card__button:focus {
+  background-color: @primary-lighter;
+}
+
+.product-card__button:active {
+  background-color: @primary-darker;
+}
+
+.product-card__button--disabled {
+  background-color: @base-grey;
+  pointer-events: none;
+}

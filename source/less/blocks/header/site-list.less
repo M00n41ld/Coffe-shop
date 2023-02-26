@@ -1,0 +1,117 @@
+.site-list {
+  .list-style;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    position: static;
+    width: 387px;
+    grid-template-columns: 103px 101px 113px 83px;
+  }
+
+  @media (min-width: @desktop-width) {
+    gap: 20px;
+  }
+}
+
+.site-list__item {
+  text-align: center;
+  border-top: 1px solid @base-secondary;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    align-items: flex-end;
+    padding: 0;
+    padding-bottom: 0;
+    box-sizing: border-box;
+    border: none;
+  }
+}
+
+.site-list__text {
+  display: inline-block;
+  .centering;
+  width: 320px;
+  .font-tablet-nav;
+
+  @media (min-width: @tablet-width) {
+    width: unset;
+  }
+}
+
+.site-list__item-link {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  .link-style;
+  display: block;
+  color: @base-black;
+  width: 100%;
+  .centering;
+
+  &:hover {
+    @media (min-width: @tablet-width) {
+      color: @base-primary;
+    }
+  }
+
+  &:focus {
+    color: @base-primary;
+    box-shadow: inset 0 0 0 2px #000000;
+    border-radius: 4px;
+    outline: none;
+
+    @media (min-width: @tablet-width) {
+      color: @base-primary;
+    }
+  }
+
+  &:active {
+    color: @base-black;
+    background-color: @base-secondary;
+
+    @media (min-width: @tablet-width) {
+      background-color: @base-secondary;
+      color: @base-primary;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    .font-tablet-nav;
+    padding: 32px 20px;
+    width: fit-content;
+    margin-left: 0;
+    margin-right: 0;
+    color: inherit;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    align-items: flex-end;
+    padding: 32px 20px;
+  }
+}
+
+.site-list__item--active {
+  @media (min-width: @tablet-width) {
+    position: relative;
+    color: @base-primary;
+    margin-right: 0;
+  }
+}
+
+.site-list__item--active::after {
+  @media (min-width: @tablet-width) {
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: @base-primary;
+    content: "";
+    position: absolute;
+    width: 100%;
+  }
+}

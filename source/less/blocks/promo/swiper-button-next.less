@@ -1,0 +1,123 @@
+.swiper-button-next {
+  height: 100%;
+  top: 0;
+  margin: 0;
+  width: 20px;
+  background: none;
+  border: none;
+  right: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 80px;
+  }
+}
+
+.swiper-button-next:hover::after {
+  content: "next";
+  position: absolute;
+  font-size: 21px;
+  color: @base-grey;
+  width: 20px;
+  height: 20px;
+
+  @media (min-width: @tablet-width) {
+    top: 37%;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 49%;
+  }
+}
+
+.swiper-button-next:focus {
+  outline: none;
+  box-shadow: inset 0 0 0 2px #000000;
+  border-radius: 4px;
+}
+
+.swiper-button-next:focus::after {
+  content: "next";
+  position: absolute;
+  font-size: 21px;
+  color: @base-grey;
+  width: 20px;
+  height: 20px;
+
+  @media (min-width: @tablet-width) {
+    top: 37%;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 49%;
+  }
+}
+
+.swiper-button-prev:focus {
+  outline: none;
+  box-shadow: inset 0 0 0 2px #000000;
+  border-radius: 4px;
+}
+
+.swiper-button-next:active {
+  background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+}
+
+.swiper-button-next:active::after {
+  @media (min-width: @tablet-width) {
+    content: "next";
+    position: absolute;
+    font-size: 21px;
+    color: @base-primary;
+    width: 20px;
+    height: 20px;
+    top: 37%;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 49%;
+  }
+}
+
+.swiper-button-next:disabled {
+  pointer-events: none;
+}
+
+.swiper-button-next:disabled::after {
+  content: "next";
+  position: absolute;
+  font-size: 21px;
+  color: @base-grey;
+  width: 20px;
+  height: 20px;
+
+  @media (min-width: @tablet-width) {
+    top: 37%;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 49%;
+  }
+}
+
+.swiper-button-next::after {
+  content: "next";
+  position: absolute;
+  font-size: 21px;
+  color: @base-primary;
+  width: 20px;
+  height: 20px;
+
+  @media (min-width: @tablet-width) {
+    content: "next";
+    position: absolute;
+    font-size: 21px;
+    color: @base-primary;
+    width: 20px;
+    height: 20px;
+    top: 37%;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 49%;
+  }
+}

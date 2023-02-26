@@ -1,0 +1,62 @@
+.button {
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 11px;
+  width: 160px;
+  .centering;
+  .font-buttons-form;
+
+  @media (min-width: @tablet-width) {
+    .font-form-button-tablet;
+    width: fit-content;
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-top: 4px;
+  }
+}
+
+.button--show {
+  color: @base-white;
+  background-color: @base-primary;
+}
+
+.button--show:hover {
+  background-color: @primary-lighter;
+}
+
+.button--show:active {
+  background-color: @primary-darker;
+}
+
+.button--show:disabled {
+  background-color: @base-grey;
+}
+
+.button--reset {
+  color: @base-primary;
+  background-color: @base-white;
+}
+
+.button--reset:hover {
+  background-color: @primary-lighter;
+  color: @base-white;
+}
+
+.button--reset:focus {
+  background-color: @primary-lighter;
+  color: @base-white;
+}
+
+.button--reset:active {
+  background-color: @primary-darker;
+  color: @base-white;
+}
+
+.button--reset:disabled {
+  background-color: @light-grey;
+  color: @base-white;
+}

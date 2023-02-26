@@ -1,0 +1,121 @@
+.swiper-button-prev {
+  height: 100%;
+  top: 0;
+  margin: 0;
+  width: 20px;
+  background: none;
+  border: none;
+  left: unset;
+
+  @media (min-width: @tablet-width) {
+    width: 80px;
+  }
+}
+
+.swiper-button-prev:hover::after {
+  content: "next";
+  position: absolute;
+  font-size: 21px;
+  color: @base-grey;
+  width: 20px;
+  height: 20px;
+
+  @media (min-width: @tablet-width) {
+    top: 37%;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 49%;
+  }
+}
+
+.swiper-button-prev:focus::after {
+  content: "next";
+  position: absolute;
+  font-size: 21px;
+  color: @base-grey;
+  width: 20px;
+  height: 20px;
+
+  @media (min-width: @tablet-width) {
+    top: 37%;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 49%;
+  }
+}
+
+.swiper-button-prev:active {
+  background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+}
+
+.swiper-button-prev:active::after {
+  content: "next";
+  position: absolute;
+  font-size: 21px;
+  color: @base-grey;
+  width: 20px;
+  height: 20px;
+
+  @media (min-width: @tablet-width) {
+    top: 37%;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 49%;
+  }
+}
+
+.swiper-button-prev:disabled {
+  pointer-events: none;
+}
+
+.swiper-button-prev:disabled::after {
+  content: "next";
+  position: absolute;
+  font-size: 21px;
+  color: @base-grey;
+  width: 20px;
+  height: 20px;
+
+  @media (min-width: @tablet-width) {
+    top: 37%;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 49%;
+  }
+}
+
+.swiper-button-prev::after {
+  content: "next";
+  position: absolute;
+  font-size: 21px;
+  color: @base-primary;
+  width: 20px;
+  height: 20px;
+  transform: rotate(180deg);
+
+  @media (min-width: @tablet-width) {
+    content: "next";
+    position: absolute;
+    font-size: 21px;
+    color: @base-primary;
+    width: 20px;
+    height: 20px;
+    transform: rotate(180deg);
+    top: 37%;
+  }
+
+  @media (min-width: @desktop-width) {
+    content: "next";
+    position: absolute;
+    font-size: 21px;
+    color: @base-primary;
+    width: 20px;
+    height: 20px;
+    transform: rotate(180deg);
+    top: 49%;
+  }
+}

@@ -1,0 +1,106 @@
+.header {
+  align-items: center;
+}
+
+.header__icons-wrapper {
+  display: grid;
+  grid-template-columns: 60px 60px 60px;
+  flex: 1;
+  order: 2;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 60px 60px;
+    order: 3;
+    flex: none;
+    margin-right: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 40px;
+    display: grid;
+    grid-template-columns: 112px 128px;
+    gap: 20px;
+  }
+}
+
+.header__icons {
+  display: block;
+  .centering;
+  margin-top: 22px;
+  margin-bottom: 22px;
+  box-sizing: border-box;
+
+
+  @media (min-width: @tablet-width) {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    margin-right: 8px;
+  }
+}
+
+.header__icons-text {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: inline-block;
+    .font-tablet-nav;
+  }
+}
+
+.header__icons-link {
+  display: block;
+  height: 100%;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    height: 80px;
+  }
+
+  @media (min-width: @desktop-width) {
+    .link-style;
+    display: flex;
+    color: @base-black;
+    height: auto;
+    padding: 32px 20px;
+  }
+}
+
+.header__icons-link:hover .header__icons {
+  fill: @base-primary;
+}
+
+.header__icons-link:hover .header__icons-text {
+  color: @base-primary;
+}
+
+.header__icons-link:focus {
+  outline: none;
+  box-shadow: inset 0 0 0 2px #000000;
+  border-radius: 4px;
+}
+
+.header__icons-link:focus .header__icons {
+  fill: @base-primary;
+}
+
+.header__icons-link:focus .header__icons-text {
+  color: @base-primary;
+}
+
+.header__icons-link:active {
+  background-color: @base-secondary;
+}
+
+.header__icons-link:active .header__icons {
+  @media (min-width: @tablet-width) {
+    fill: @base-primary;
+  }
+}
+
+.header__icons-link:active .header__icons-text {
+  color: @base-primary;
+}

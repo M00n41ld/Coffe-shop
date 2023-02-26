@@ -1,0 +1,49 @@
+.logo-footer {
+  @media (min-width: @tablet-width) {
+    padding-top: 2px;
+  }
+}
+
+.logo-footer__link {
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    width: 170px;
+    height: 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 10px;
+  }
+}
+
+.logo-footer__link:hover {
+  opacity: 0.8;
+}
+
+.logo-footer__link:focus {
+  opacity: 0.8;
+}
+
+.logo-footer__link:active {
+  opacity: 0.5;
+}
+
+.logo-footer__logo {
+  @media (min-width: @tablet-width) {
+    width: 170px;
+    height: 36px;
+  }
+}
+
+.logo-footer__about {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    margin-top: 0;
+    .font-promo-text;
+    width: 318px;
+    margin-bottom: 50px;
+  }
+}

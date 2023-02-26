@@ -1,0 +1,82 @@
+.control {
+  .list-style;
+  display: block;
+  position: relative;
+}
+
+.control__label {
+  .font-radio-text;
+  display: block;
+  color: inherit;
+}
+
+.control__radio {
+  display: grid;
+  grid-template-columns: 24px auto;
+  gap: 10px;
+  color: @base-black;
+}
+
+.control__mark-radio {
+  width: 24px;
+  height: 24px;
+  display: block;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 2px solid @base-grey;
+}
+
+.control__mark-radio::before {
+  width: 40px;
+  height: 40px;
+  top: -5px;
+}
+
+.control__input-radio:hover + .control__mark-radio::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  background-color: @primary-opacity;
+  top: 4px;
+  left: 4px;
+  border-radius: 50%;
+}
+
+.control__input-radio:hover + .control__mark-radio {
+  border-color: @base-primary;
+}
+
+.control__input-radio:checked + .control__mark-radio {
+  border-color: @base-primary;
+}
+
+.control__input-radio:checked:disabled + .control__mark-radio::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  background-color: @light-grey;
+  top: 4px;
+  left: 4px;
+  border-radius: 50%;
+}
+
+.control__input-radio:disabled + .control__mark-radio {
+  border-color: @light-grey;
+}
+
+.control__input-radio:disabled + .control__mark-radio + .control__label {
+  color: @light-grey;
+}
+
+.control__input-radio:checked + .control__mark-radio::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  background-color: @base-primary;
+  top: 4px;
+  left: 4px;
+  border-radius: 50%;
+}

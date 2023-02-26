@@ -1,0 +1,90 @@
+.control-swipe {
+  .list-style;
+  display: block;
+  position: relative;
+  margin-left: 2px;
+}
+
+.control-swipe__label {
+  .font-radio-text;
+  display: block;
+  color: inherit;
+}
+
+.control-swipe__radio {
+  display: grid;
+  grid-template-columns: 42px auto;
+  gap: 10px;
+  color: @base-black;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 42px auto;
+  }
+}
+
+.control-swipe__mark-radio {
+  width: 42px;
+  height: 24px;
+  display: block;
+  box-sizing: border-box;
+  border-radius: 12px;
+  border: 2px solid @base-grey;
+  background-color: @base-grey;
+}
+
+.control-swipe__mark-radio::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: @base-white;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+}
+
+.control-swipe__input-radio:checked + .control-swipe__mark-radio {
+  border-color: @base-primary;
+  background-color: @base-primary;
+}
+
+.control-swipe__input-radio:disabled + .control-swipe__mark-radio {
+  border-color: @light-grey;
+  background-color: @light-grey;
+}
+
+.control-swipe__input-radio:disabled + .control-swipe__mark-radio + .control-swipe__label {
+  color: @light-grey;
+}
+
+.control-swipe__input-radio:checked + .control-swipe__mark-radio::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: @base-white;
+  top: 2px;
+  left: 20px;
+  border-radius: 50%;
+}
+
+.control-swipe__input-radio:hover + .control-swipe__mark-radio {
+  background-color: @primary-opacity;
+  border-color: @base-primary;
+}
+
+.control-swipe__input-radio:focus + .control-swipe__mark-radio {
+  background-color: @primary-opacity;
+  border-color: @base-primary;
+}
+
+.control-swipe__input-radio:checked:disabled + .control-swipe__mark-radio::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: @base-grey;
+  top: 2px;
+  left: 20px;
+  border-radius: 50%;
+}

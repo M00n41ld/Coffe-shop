@@ -1,0 +1,244 @@
+.promo {
+  min-width: 320px;
+  .centering;
+}
+
+.promo__wrapper {
+  .list-style;
+  .centering;
+  box-sizing: border-box;
+}
+
+.promo__block-text {
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 608px;
+    .centering;
+    order: 1;
+    flex: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    order: 2;
+    text-align: start;
+    margin-top: 152px;
+    margin-right: 46px;
+  }
+}
+
+.promo__block-order {
+  display: flex;
+  justify-content: space-between;
+  width: 230px;
+  box-sizing: border-box;
+  .centering;
+
+  @media (min-width: @tablet-width) {
+    width: 230px;
+    .centering;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
+  }
+}
+
+.promo__title {
+  .font-titles;
+  margin-top: 0;
+  margin-bottom: 4px;
+
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 3px;
+  }
+}
+
+.promo__subtitle {
+  .font-promo-name;
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  @media (min-width: @tablet-width) {
+    .font-promo-subtitle-tablet;
+    margin-bottom: 16px;
+  }
+}
+
+.promo__text {
+  .font-promo-text;
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    .font-promo-text-tablet;
+    width: 604px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 40px;
+  }
+}
+
+.promo__price {
+  .font-promo-price;
+  margin: 0;
+  box-sizing: border-box;
+  padding-top: 5px;
+}
+
+.promo__price--before {
+  color: @base-primary;
+  .font-price-before;
+}
+
+.promo__button-order {
+  display: block;
+  .link-style;
+  color: @base-white;
+  background-color: @base-primary;
+  padding: 8px 20px;
+  width: 113px;
+  box-sizing: border-box;
+  .font-radio-text;
+  border-radius: 4px;
+}
+
+.promo__button-order:hover {
+  background-color: @primary-lighter;
+}
+
+.promo__button-order:active {
+  background-color: @primary-darker;
+}
+
+.promo__button-order--disabled {
+  background-color: @base-grey;
+  pointer-events: none;
+}
+
+.promo__image {
+  display: block;
+  .centering;
+
+  @media (min-width: @tablet-width) {
+    width: 476px;
+    height: 476px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 600px;
+    height: 600px;
+    margin: 0;
+  }
+}
+
+.promo__block-image {
+  order: 2;
+  flex: 1;
+  margin-bottom: 10px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    order: 1;
+    margin-top: 0;
+    width: fit-content;
+    margin-left: 80px;
+  }
+}
+
+.promo__swiper {
+  width: 320px;
+  .centering;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+    position: relative;
+  }
+}
+
+.promo__item--flat-white {
+  background-color: @flat-white;
+
+
+  @media (min-width: @tablet-width) {
+    background: linear-gradient(to bottom, @flat-white 0 640px, @base-white 640px);
+  }
+
+  @media (min-width: @desktop-width) {
+    background: @flat-white;
+  }
+}
+
+.promo__item--lavender-latte {
+  background-color: @lavender-latte;
+
+  @media (min-width: @tablet-width) {
+    background: linear-gradient(to bottom, @lavender-latte 0 640px, @base-white 640px);
+  }
+
+  @media (min-width: @desktop-width) {
+    background: @lavender-latte;
+  }
+}
+
+.promo__item--espresso {
+  background-color: @espresso;
+
+  @media (min-width: @tablet-width) {
+    background: linear-gradient(to bottom, @espresso 0 640px, @base-white 640px);
+  }
+
+  @media (min-width: @desktop-width) {
+    background: @espresso;
+  }
+}
+
+.promo__pagination {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.promo__item {
+  padding: 20px 20px 60px 20px;
+  box-sizing: border-box;
+  min-height: 656px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    padding-top: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 84px;
+  }
+}
+
+.promo__price-wrapper {
+  width: 97px;
+  display: grid;
+  grid-template-columns: 40px 51px;
+  gap: 6px;
+}
+
+.promo__button--no-js {
+  display: none;
+}

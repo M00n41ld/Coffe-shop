@@ -1,0 +1,35 @@
+.sorting {
+  display: grid;
+  grid-template-columns: 107px 155px;
+  gap: 16px;
+  margin-bottom: 19px;
+
+  @media (min-width: @tablet-width) {
+    justify-content: end;
+    grid-template-columns: 107px 165px;
+    gap: 11px;
+    margin-bottom: 28px;
+  }
+}
+
+.sorting__text {
+  .font-catalog-subtitles;
+  margin: 0;
+  padding-left: 2px;
+}
+
+.sorting__control {
+  .font-catalog-subtitles;
+  color: @base-primary;
+  border: none;
+  background-color: transparent;
+  border-radius: 4px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 8px;
+  }
+}
+
+.sorting__control:hover {
+  background-color: @base-secondary;
+}

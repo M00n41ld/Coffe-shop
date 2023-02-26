@@ -1,0 +1,262 @@
+.features {
+  min-width: 320px;
+}
+
+.features__wrapper {
+  width: 320px;
+  .centering;
+  padding: 20px;
+  padding-bottom: 60px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 99px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: @desktop-width;
+    padding-top: 101px;
+    padding-bottom: 118px;
+  }
+}
+
+.features__title {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  .font-titles;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
+    margin-bottom: 3px;
+  }
+}
+
+.features__reasons {
+  text-align: center;
+  margin-bottom: 35px;
+  .font-subtitles;
+  margin-top: 0;
+
+  @media (min-width: @tablet-width) {
+    .font-features-title-tablet;
+    margin-bottom: 60px;
+  }
+
+
+  @media (min-width: @desktop-width) {
+    .font-features-title-tablet;
+    margin-bottom: 80px;
+  }
+}
+
+.features__list {
+  .list-style;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 339px 339px;
+    gap: 30px;
+    row-gap: 50px;
+    padding-left: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 318px 317px 318px 317px;
+    gap: 30px;
+    padding-left: 40px;
+  }
+}
+
+.features__advantages {
+  text-align: center;
+  .font-features-title;
+  margin: 0;
+  margin-bottom: 4px;
+
+  @media (min-width: @tablet-width) {
+    .font-features-advantages-tablet;
+    text-align: start;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: center;
+  }
+}
+
+.features__text {
+  text-align: center;
+  display: block;
+  .font-promo-text;
+  .centering;
+
+
+  @media (min-width: @tablet-width) {
+    .centering;
+    .font-promo-button-tablet;
+    text-align: start;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: center;
+  }
+}
+
+.features__items--speed {
+  position: relative;
+  padding-top: 66px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+    padding-left: 72px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 78px;
+    padding-left: 0;
+  }
+}
+
+.features__items--speed::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../../img/features-speed.svg");
+  width: 52px;
+  height: 56px;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media (min-width: @tablet-width) {
+    left: 0;
+    transform: translateX(0);
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.features__items--comfort {
+  position: relative;
+  padding-top: 66px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+    padding-left: 72px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 78px;
+    padding-left: 0;
+  }
+}
+
+.features__items--comfort::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../../img/features-comfort.svg");
+  width: 52px;
+  height: 56px;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media (min-width: @tablet-width) {
+    left: 0;
+    transform: translateX(0);
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.features__items--cheerfulness {
+  position: relative;
+  padding-top: 66px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+    padding-left: 72px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 78px;
+    padding-left: 0;
+  }
+}
+
+.features__items--cheerfulness::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../../img/features-cheerfulness.svg");
+  width: 52px;
+  height: 56px;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media (min-width: @tablet-width) {
+    left: 0;
+    transform: translateX(0);
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.features__items--ecological {
+  position: relative;
+  padding-top: 66px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+    padding-left: 72px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 78px;
+    padding-left: 0;
+  }
+}
+
+.features__items--ecological::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../../img/features-ecological.svg");
+  width: 52px;
+  height: 56px;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media (min-width: @tablet-width) {
+    left: 0;
+    transform: translateX(0);
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

@@ -1,0 +1,253 @@
+.pagination {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+  margin-bottom: 24px;
+
+  @media (min-width: @tablet-width) {
+    justify-content: end;
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: end;
+    margin-bottom: 98px;
+  }
+}
+
+.pagination__list {
+  display: grid;
+  .list-style;
+  grid-template-columns: 40px 40px 40px;
+  gap: 20px;
+}
+
+.pagination__item-text {
+  width: 40px;
+  height: 40px;
+  background-color: @base-white;
+
+  @media (min-width: @tablet-width) {
+    width: fit-content;
+  }
+}
+
+.pagination__item {
+  width: 40px;
+  height: 40px;
+  background-color: @base-white;
+}
+
+.pagination__arrow {
+  .link-style;
+  display: flex;
+  text-align: center;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.pagination__link {
+  .font-pagination;
+  .link-style;
+  display: flex;
+  text-align: center;
+  color: @base-primary;
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.pagination__page-number {
+  margin: 0;
+  .centering;
+  align-self: center;
+}
+
+.pagination__icon-prev {
+  .centering;
+  align-self: center;
+  fill: @base-primary;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.pagination__icon-next {
+  transform: rotate(180deg);
+  .centering;
+  align-self: center;
+  fill: @base-primary;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.pagination__prev {
+  display: none;
+  color: @base-primary;
+
+  @media (min-width: @tablet-width) {
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.pagination__next {
+  display: none;
+  color: @base-primary;
+
+  @media (min-width: @tablet-width) {
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.pagination__arrow:hover {
+  background-color: @base-primary;
+}
+
+.pagination__arrow:hover .pagination__prev {
+  color: @base-white;
+}
+
+.pagination__arrow:hover .pagination__icon-prev {
+  fill: @base-white;
+}
+
+.pagination__arrow:hover .pagination__next {
+  color: @base-white;
+}
+
+.pagination__arrow:hover .pagination__icon-next {
+  fill: @base-white;
+}
+
+.pagination__arrow:focus {
+  background-color: @base-primary;
+}
+
+.pagination__arrow:focus .pagination__next {
+  color: @base-white;
+}
+
+.pagination__arrow:focus .pagination__icon-next {
+  fill: @base-white;
+}
+
+.pagination__arrow:focus .pagination__icon-prev {
+  fill: @base-white;
+}
+
+.pagination__arrow:focus .pagination__prev {
+  color: @base-white;
+}
+
+.pagination__arrow:active {
+  background-color: @primary-darker;
+}
+
+.pagination__arrow:active .pagination__prev {
+  color: @base-white;
+}
+
+.pagination__arrow:active .pagination__icon-prev {
+  fill: @base-white;
+}
+
+.pagination__arrow:active .pagination__icon-next {
+  fill: @base-white;
+}
+
+.pagination__arrow:active .pagination__next {
+  color: @base-white;
+}
+
+.pagination__arrow--disabled {
+  background-color: @base-grey;
+}
+
+.pagination__arrow--disabled .pagination__prev {
+  color: @base-white;
+}
+
+.pagination__arrow--disabled .pagination__next {
+  color: @base-white;
+}
+
+.pagination__arrow--disabled .pagination__icon-prev {
+  fill: @base-white;
+}
+
+.pagination__arrow--disabled .pagination__icon-next {
+  fill: @base-white;
+}
+
+.pagination__link:hover {
+  background-color: @base-primary;
+}
+
+.pagination__link:hover .pagination__page-number {
+  color: @base-white;
+}
+
+.pagination__link:focus {
+  background-color: @base-primary;
+}
+
+.pagination__link:focus .pagination__page-number {
+  color: @base-white;
+}
+
+.pagination__link:active {
+  background-color: @primary-darker;
+}
+
+.pagination__link:active .pagination__page-number {
+  color: @base-white;
+}
+
+.pagination__link--disabled {
+  background-color: @base-grey;
+}
+
+.pagination__link--disabled .pagination__page-number {
+  color: @base-white;
+}
+
+.pagination__link--active {
+  color: @base-black;
+  background-color: transparent;
+  .font-catalog-subtitles;
+}
+
+.pagination__link--active:hover {
+  background-color: @base-white;
+}
+
+.pagination__link--active:hover .pagination__page-number {
+  color: @base-black;
+}
+
+.pagination__link--active:focus {
+  background-color: @base-white;
+}
+
+.pagination__link--active:focus .pagination__page-number {
+  color: @base-black;
+}
+
+.pagination__link--active:active {
+  background-color: @base-white;
+}
+
+.pagination__link--active:active .pagination__page-number {
+  color: @base-black;
+}
