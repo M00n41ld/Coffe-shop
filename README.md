@@ -1,2 +1,1 @@
-# Coffe-shop
-Adaptive coffee-shop layout
+На проект ушло 36 часов
