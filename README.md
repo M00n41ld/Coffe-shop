@@ -2,7 +2,7 @@ Adaptive layout for mobile, tablet and desktop
 Visit page - https://m00n41ld.github.io/Coffeee-shop/
 
 This project styles were written using LESS preprocessor.
-All of the colors are saved in variables file, so if in the future color palette will change, if will be easy to restyle this page.
+All of the colors are saved in variables file, so if in the future this color palette changes, it will be easy to restyle this page.
 
 ![image](https://user-images.githubusercontent.com/105647939/221505881-6a3ffd08-d615-45a9-80ec-827858abc2fb.png)
 
