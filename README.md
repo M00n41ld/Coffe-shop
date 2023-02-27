@@ -11,7 +11,7 @@ Layout was made with BEM class name rules and styles for this components are pla
 
 ![image](https://user-images.githubusercontent.com/105647939/221506630-0e87bd26-b0ed-4423-869c-eaf2ee4543eb.png)
 
-For the interactive map i used Leaflet library, and for the slider - Swiper libraby. 
+For the interactive map i used Leaflet library and for the slider - Swiper libraby. 
 
 In case js will not be working on the client's side i made all interactive elements with safety precaution: 
 For the map - there is a background image underneath with the exact geo position.
