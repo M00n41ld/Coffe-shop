@@ -19,5 +19,6 @@ For the map - there is a background image underneath with the exact geo position
 For the slider - i hid the arrows, so it will look like one simple promo block.
 
 And for the mobile burger menu - nav block is shown, button is hidden and menu's position changes from absolute to static, so it will not block promo-content
+
 ![image](https://user-images.githubusercontent.com/105647939/221509056-3d7ecbee-f0ff-4b71-8c04-fe2505074608.png)
 
